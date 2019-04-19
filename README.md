@@ -5,9 +5,11 @@ For this test I have considered several classes to work with. They all have a ba
 
 [**Catalog**](https://github.com/danvbe/TestBasket/blob/master/Catalog.php) - contains only an array of products. It has the ability to not allow duplicate codes. 
 
-[**Offer**](https://github.com/danvbe/TestBasket/blob/master/Offer.php) - contains the definition of an offer. It has the Code of the product, the Quantity and the priceChanger
-	EX: 	'buy 1 get second at half price' means if you buy 2 products you get them at 0.75 of original price
-		So, we will have an Offer with the proper Code, Quantity set to 2 and the priceChanger set to 0.75
+[**Offer**](https://github.com/danvbe/TestBasket/blob/master/Offer.php) - contains the definition of an offer. It has the Code of the product, the Quantity and the priceChanger.
+
+As an example: 
+ - 'buy 1 get second at half price' means if you buy 2 products you get them at 0.75 of original price
+ - So, we will have an Offer with the proper Product Code, Quantity set to 2 and the priceChanger set to 0.75
 
 [**DeliveryChargeRules**](https://github.com/danvbe/TestBasket/blob/master/DeliveryChargeRules.php) - this is mostly a dummy class to simply hold the limits within we change the deliver price based on the given basket total. It contains a plain function to return the result based on the given basket total.
 
